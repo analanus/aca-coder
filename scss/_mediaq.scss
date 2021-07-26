@@ -1,0 +1,133 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1600px;
+}
+
+@media only screen and (min-width: 992px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .menu {
+        li {
+            a {
+                color: #fff !important;
+                text-shadow: 2px 2px 2px black;
+                height: 50px;
+            }
+            a:hover {
+                border-bottom: 5px solid #fff;
+                height: 45px;
+                transition: all .3s;
+            }
+        }
+    }
+    .contenedorRedes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+        .redesSociales {
+            width: 35px;
+            padding-right: 3px;
+        }
+    }
+    .contenedorSection1 {
+        @include max-width;
+        display: flex;
+        flex-direction: row;
+        .videoWrapper {
+            display: none;
+        }
+        .videoDesktop {
+            display: block;
+        }
+    }
+    footer {
+        height: 600px;
+        .contenedorFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 1100px;
+            width: 100%;
+            .contenedorFormulario {
+                .formulario {
+                    width: 100%;
+                    max-width: 800px;
+                }
+            }
+        }
+        .contenedorMapa {
+            .mapa {
+                width: 500px;
+            }
+        }
+    }
+    .contenedorHistoria {
+        display: flex;
+        flex-direction: row;
+        .articuloHistoria {
+            width: 48%;
+            height: 340px;
+        }
+    }
+    .articulos {
+        padding: 20px;
+        @include max-width;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .contenedorArticulo {
+            height: 800px;
+            width: 500px;
+            .imagenCard {
+                width: 100%;
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+    }
+    .contenedorComision {
+        align-items: center;
+        .comision {
+            max-width: 700px;
+            justify-content: space-between;
+        }
+    }
+    .tituloSeccion {
+        padding: 20px 0 10px;
+    }
+    .descripcionSeccion {
+        padding: 20px 0 40px;
+    }
+    .contenedorSuscribite {
+        flex-direction: row;
+    }
+    .anmat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include max-width;
+        text-align: center;
+        a {
+            width: 15%;
+            padding-top: 15px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .contenedorCeliaquia {
+        .articuloCeliaquia {
+            @include max-width;
+        }
+        .articuloCeliaquia2 {
+            @include max-width;
+        }
+    }
+}

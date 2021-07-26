@@ -1,0 +1,20 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.contenedorSlide {
+    width: 100%;
+    max-width: 700px;
+}
+
+.contenedorSuscribite {
+    display: flex;
+    flex-direction: column;
+    @include max-width;
+    padding: 20px 15px;
+}
+
+.tituloSuscribite {
+    padding: 10px 0;
+}
