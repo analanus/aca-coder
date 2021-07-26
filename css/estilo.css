@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 .tituloSeccion {
   color: #333333;
   padding: 20px 15px 0;
@@ -53,7 +56,7 @@ header {
   background-color: #54436B; }
   header .contenedorNav {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     display: flex;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -123,7 +126,7 @@ footer {
 
 .contenedorSection1 {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   margin: 50px 0;
@@ -154,7 +157,7 @@ footer {
 
 .contenedorSection2 {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   background-color: #ACFFAD;
   display: flex;
   flex-direction: column;
@@ -167,14 +170,14 @@ footer {
 .articulos {
   padding: 20px 0;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
   .articulos .contenedorArticulo {
     height: 550px;
-    width: 300px;
+    width: 310px;
     background-color: #ffffff;
     border: 1px solid grey;
     display: flex;
@@ -191,6 +194,8 @@ footer {
       background-position: center center; }
     .articulos .contenedorArticulo .textoNota {
       padding: 15px 15px 0; }
+      .articulos .contenedorArticulo .textoNota h3 {
+        font-weight: 700; }
       .articulos .contenedorArticulo .textoNota p {
         width: 100%;
         padding-top: 15px;
@@ -199,7 +204,7 @@ footer {
 
 .contenedorHistoria {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -216,7 +221,7 @@ footer {
 
 .contenedorComision {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   padding: 35px 0; }
@@ -225,7 +230,7 @@ footer {
 
 .comision {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -247,7 +252,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1600px; }
+  max-width: 1400px; }
 
 .fondoTalleres {
   background-color: #ACFFAD;
@@ -255,7 +260,7 @@ footer {
 
 .contenedorCeliaquia {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -297,7 +302,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   padding: 20px 15px; }
 
 .tituloSuscribite {
@@ -326,7 +331,7 @@ footer {
       padding-right: 3px; }
   .contenedorSection1 {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     display: flex;
     flex-direction: row; }
     .contenedorSection1 .videoWrapper {
@@ -351,18 +356,18 @@ footer {
     flex-direction: row; }
     .contenedorHistoria .articuloHistoria {
       width: 48%;
-      height: 340px; }
+      height: 360px; }
   .articulos {
     padding: 20px;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; }
     .articulos .contenedorArticulo {
       height: 800px;
-      width: 500px; }
+      width: 420px; }
       .articulos .contenedorArticulo .imagenCard {
         width: 100%;
         height: 500px;
@@ -385,7 +390,7 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
     text-align: center; }
     .anmat a {
       width: 15%;
@@ -394,7 +399,7 @@ footer {
       width: 100%; }
   .contenedorCeliaquia .articuloCeliaquia {
     width: 100%;
-    max-width: 1600px; }
+    max-width: 1400px; }
   .contenedorCeliaquia .articuloCeliaquia2 {
     width: 100%;
-    max-width: 1600px; } }
+    max-width: 1400px; } }

@@ -1,6 +1,6 @@
 @mixin max-width {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -70,7 +70,7 @@
         flex-direction: row;
         .articuloHistoria {
             width: 48%;
-            height: 340px;
+            height: 360px;
         }
     }
     .articulos {
@@ -82,7 +82,7 @@
         justify-content: space-between;
         .contenedorArticulo {
             height: 800px;
-            width: 500px;
+            width: 420px;
             .imagenCard {
                 width: 100%;
                 height: 500px;

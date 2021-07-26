@@ -1,6 +1,6 @@
 @mixin max-width {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1400px;
 }
 
 .contenedorSection1 {
@@ -60,7 +60,7 @@
     justify-content: space-between;
     .contenedorArticulo {
         height: 550px;
-        width: 300px;
+        width: 310px;
         background-color: #ffffff;
         border: 1px solid grey;
         display: flex;
@@ -78,6 +78,9 @@
         }
         .textoNota {
             padding: 15px 15px 0;
+            h3 {
+                font-weight: 700;
+            }
             p {
                 width: 100%;
                 padding-top: 15px;

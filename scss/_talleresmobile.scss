@@ -1,8 +1,12 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1400px;
+}
+
 .tituloTalleres {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1600px;
+    @include max-width;
 }
 
 .fondoTalleres {
