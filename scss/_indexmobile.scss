@@ -87,20 +87,21 @@
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
         .imagenCard {
             width: 100%;
-            height: 250px;
+            height: 300px;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
         }
         .textoNota {
             padding: 15px 15px 0;
+            height: 250px;
             h3 {
                 font-weight: 700;
             }
             p {
                 width: 100%;
                 padding-top: 15px;
-                font-size: 1.1em;
+                font-size: 1em;
                 line-height: 1.5em;
             }
         }

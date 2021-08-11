@@ -38,7 +38,11 @@ section {
 
 .modalidadTaller {
   font-weight: 500;
-  font-style: italic; }
+  font-style: italic;
+  width: 100%;
+  padding: 0 15px;
+  line-height: 1.5em;
+  font-size: .8em; }
 
 .separador1 {
   background-color: #FFF;
@@ -205,18 +209,19 @@ footer {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4); }
     .articulos .contenedorArticulo .imagenCard {
       width: 100%;
-      height: 250px;
+      height: 300px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center; }
     .articulos .contenedorArticulo .textoNota {
-      padding: 15px 15px 0; }
+      padding: 15px 15px 0;
+      height: 250px; }
       .articulos .contenedorArticulo .textoNota h3 {
         font-weight: 700; }
       .articulos .contenedorArticulo .textoNota p {
         width: 100%;
         padding-top: 15px;
-        font-size: 1.1em;
+        font-size: 1em;
         line-height: 1.5em; }
 
 .contenedorHistoria {
@@ -274,24 +279,6 @@ footer {
 .fondoTalleres {
   background-color: #ACFFAD;
   padding: 25px; }
-
-.articulos {
-  padding: 20px;
-  width: 100%;
-  max-width: 1400px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .articulos .contenedorArticulo {
-    height: 800px;
-    width: 420px; }
-    .articulos .contenedorArticulo .imagenCard {
-      width: 100%;
-      height: 500px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center; }
 
 .contenedorCeliaquia {
   display: flex;
@@ -376,6 +363,9 @@ footer {
         max-width: 800px; }
     footer .contenedorMapa .mapa {
       width: 500px; }
+  .articulos {
+    flex-direction: row;
+    justify-content: space-around; }
   .contenedorHistoria {
     display: flex;
     flex-direction: row; }

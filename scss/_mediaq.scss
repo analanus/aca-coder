@@ -66,6 +66,10 @@
             }
         }
     }
+    .articulos {
+        flex-direction: row;
+        justify-content: space-around;
+    }
     .contenedorHistoria {
         display: flex;
         flex-direction: row;
