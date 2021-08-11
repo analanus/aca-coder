@@ -7,7 +7,7 @@
     @include max-width;
     display: flex;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 15px 0;
     background-color: $bg-principal;
     .textoBienvenida {
         display: flex;
@@ -32,6 +32,22 @@
             color: #ffffff;
             padding-top: 20px;
         }
+    }
+    .videoResponsive {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        position: relative;
+    }
+    .videoResponsive iframe,
+    .videoResponsive object,
+    .videoResponsive embed {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     .videoDesktop {
         display: none;

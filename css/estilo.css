@@ -54,6 +54,9 @@ section {
 
 header {
   background-color: #54436B; }
+  header .navbar-light .navbar-toggler {
+    background-color: #fff;
+    border-color: #D1D9D9; }
   header .contenedorNav {
     width: 100%;
     max-width: 1400px;
@@ -75,7 +78,7 @@ header {
 footer {
   width: 100%;
   height: 1150px;
-  margin-top: 25px;
+  margin-top: 15px;
   background-color: #D1D9D9;
   display: flex;
   justify-content: center;
@@ -98,7 +101,8 @@ footer {
         footer .contenedorFooter .contenedorFormulario .formulario input,
         footer .contenedorFooter .contenedorFormulario .formulario select,
         footer .contenedorFooter .contenedorFormulario .formulario textarea {
-          margin: 5px 0; }
+          margin: 5px 0;
+          border-radius: 5px; }
   footer .contenedorMapa {
     display: flex;
     flex-direction: column;
@@ -112,24 +116,23 @@ footer {
     footer .contenedorMapa .contenedorMailyredes {
       display: flex;
       flex-direction: row;
-      align-items: center; }
-      footer .contenedorMapa .contenedorMailyredes .redesFooter {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 60px; }
-        footer .contenedorMapa .contenedorMailyredes .redesFooter a {
-          padding-left: 5px; }
-        footer .contenedorMapa .contenedorMailyredes .redesFooter .redesSociales {
-          width: 35px;
-          padding-right: 3px; }
+      align-items: center;
+      height: 60px; }
+      footer .contenedorMapa .contenedorMailyredes a {
+        padding-left: 5px; }
+      footer .contenedorMapa .contenedorMailyredes .redesSociales {
+        width: 35px;
+        padding-right: 3px; }
+      footer .contenedorMapa .contenedorMailyredes .mail {
+        width: 39px;
+        padding-right: 3px; }
 
 .contenedorSection1 {
   width: 100%;
   max-width: 1400px;
   display: flex;
   flex-direction: column;
-  margin: 50px 0;
+  margin: 15px 0;
   background-color: #50CB93; }
   .contenedorSection1 .textoBienvenida {
     display: flex;
@@ -152,6 +155,20 @@ footer {
       width: 85%;
       color: #ffffff;
       padding-top: 20px; }
+  .contenedorSection1 .videoResponsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative; }
+  .contenedorSection1 .videoResponsive iframe,
+  .contenedorSection1 .videoResponsive object,
+  .contenedorSection1 .videoResponsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
   .contenedorSection1 .videoDesktop {
     display: none; }
 
@@ -258,29 +275,37 @@ footer {
   background-color: #ACFFAD;
   padding: 25px; }
 
-.contenedorCeliaquia {
+.articulos {
+  padding: 20px;
   width: 100%;
   max-width: 1400px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .articulos .contenedorArticulo {
+    height: 800px;
+    width: 420px; }
+    .articulos .contenedorArticulo .imagenCard {
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+
+.contenedorCeliaquia {
+  display: flex;
   flex-direction: column;
-  align-items: center; }
-  .contenedorCeliaquia .articuloCeliaquia {
-    width: 95%;
-    background-color: #ACFFAD;
-    border-radius: 16px;
-    padding: 20px;
-    margin: 15px; }
-    .contenedorCeliaquia .articuloCeliaquia p,
-    .contenedorCeliaquia .articuloCeliaquia h2 {
-      padding: 5px 10px; }
-  .contenedorCeliaquia .articuloCeliaquia2 {
-    width: 95%;
-    background-color: #50CB93;
-    border-radius: 16px;
-    padding: 20px;
-    margin: 15px; }
-    .contenedorCeliaquia .articuloCeliaquia2 p {
-      font-size: 1.3em; }
+  width: 95%; }
+  .contenedorCeliaquia .parrafo2 {
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 10px; }
+    .contenedorCeliaquia .parrafo2 p {
+      margin-bottom: 0; }
+  .contenedorCeliaquia .imagenCeliaquia img,
+  .contenedorCeliaquia .imagenLogosintacc img {
+    width: 95%; }
 
 .anmat {
   display: flex;
@@ -334,7 +359,7 @@ footer {
     max-width: 1400px;
     display: flex;
     flex-direction: row; }
-    .contenedorSection1 .videoWrapper {
+    .contenedorSection1 .videoResponsive {
       display: none; }
     .contenedorSection1 .videoDesktop {
       display: block; }
@@ -357,23 +382,6 @@ footer {
     .contenedorHistoria .articuloHistoria {
       width: 48%;
       height: 360px; }
-  .articulos {
-    padding: 20px;
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .articulos .contenedorArticulo {
-      height: 800px;
-      width: 420px; }
-      .articulos .contenedorArticulo .imagenCard {
-        width: 100%;
-        height: 500px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center; }
   .contenedorComision {
     align-items: center; }
     .contenedorComision .comision {
@@ -385,6 +393,44 @@ footer {
     padding: 20px 0 40px; }
   .contenedorSuscribite {
     flex-direction: row; }
+  .contenedorCeliaquia {
+    width: 100%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px; }
+    .contenedorCeliaquia .tituloSeccion {
+      grid-column: 1 / 4;
+      grid-row: 1; }
+    .contenedorCeliaquia .parrafo1 {
+      grid-column: 1 / 3;
+      grid-row: 2; }
+    .contenedorCeliaquia .imagenCeliaquia {
+      grid-column: 3;
+      grid-row: 2; }
+    .contenedorCeliaquia .parrafo2 {
+      grid-column: 1 / 4;
+      grid-row: 3;
+      display: flex;
+      justify-content: center; }
+      .contenedorCeliaquia .parrafo2 p {
+        font-size: 1.7em;
+        margin-bottom: 0; }
+    .contenedorCeliaquia .parrafo3 {
+      grid-column: 1 / 4;
+      grid-row: 4; }
+    .contenedorCeliaquia .imagenLogosintacc {
+      grid-column: 1 / 3;
+      grid-row: 5; }
+    .contenedorCeliaquia .parrafo4 {
+      grid-column: 3 / 4;
+      grid-row: 5;
+      display: flex;
+      align-items: center; }
+    .contenedorCeliaquia .parrafo5 {
+      grid-column: 1 / 4;
+      grid-row: 6; }
   .anmat {
     display: flex;
     flex-direction: column;
@@ -396,10 +442,4 @@ footer {
       width: 15%;
       padding-top: 15px; }
     .anmat img {
-      width: 100%; }
-  .contenedorCeliaquia .articuloCeliaquia {
-    width: 100%;
-    max-width: 1400px; }
-  .contenedorCeliaquia .articuloCeliaquia2 {
-    width: 100%;
-    max-width: 1400px; } }
+      width: 100%; } }
